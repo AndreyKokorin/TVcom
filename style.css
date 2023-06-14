@@ -1,0 +1,136 @@
+*{
+    box-sizing: border-box;
+}
+.wrapper{
+    width: 320px;
+    height: 480px;
+    overflow: hidden;
+}
+img{
+    pointer-events: none;
+    user-select: none;
+}
+.sliderItem{
+    pointer-events: none;
+    user-select: none;
+    transition-duration: 1s;
+    padding: 8px 0;
+}
+.slider1{
+    background-color: #212121; 
+    padding: 5px 0 3px 0 ;
+    position: relative;
+    width: 320px;
+    height: 155px;
+}
+.leftMove{
+    position: absolute;
+    top: 28px;
+    left: 110px;
+    transition-duration: 1s;
+    pointer-events: none;
+}
+.leftMoveAnim{
+   left: -250px; 
+}
+.sliderLenta1{
+    display: flex;
+    column-gap: 25px;
+    transform: translateX(320px);
+    transition-duration: 1s;
+    pointer-events: none;
+}
+.center{
+    padding: 7px 16px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.25), 0px 0px 10px 4px rgba(255, 255, 255, 0.16);
+}
+.button{
+    padding-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.btn{
+    width: 215px;
+    height: 50px;
+    background: #E41A4B;
+    border-radius: 10px;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition-duration: 0.2s;
+}
+.btn:hover{
+    background: #A53692;
+    box-shadow: 0px 0px 8px 5px rgba(165, 54, 146, 0.3);
+    border-radius: 10px;
+}
+.focusSlide{
+    padding: 8px 70px;
+    transform: scale(1.08);
+    
+}
+.focusSlide img{
+    border-radius: 5px;
+    transition: 0.5s;
+}
+    
+.slide0{
+    transform: translateX(45px);
+}
+.slide1{
+    transform: translateX(-65px);
+}
+.slide2{
+    transform: translateX(-175px);
+}
+.slide3{
+    transform: translateX(-285px);
+}
+.slider2{
+    background-color: #212121;
+    padding: 5px 0;
+    position: relative;
+}
+.sliderLenta2{
+    display: flex;
+    column-gap: 25px;
+    transform: translateX(-615px);
+    transition-duration: 1s;
+    pointer-events: none;
+}
+.slide20{
+    transform: translateX(45px);
+}
+.slide23{
+    transform: translateX(-280px);
+}
+.slide22{
+    transform: translateX(-175px);
+}
+.slide21{
+    transform: translateX(-65px);
+}
+.rightmove{
+    position: absolute;
+    top: 28px;
+    left: 110px;
+    z-index: 20;
+    transition: 0.5s;
+    pointer-events: none;
+}
+.rightmoveAnim{
+    position: absolute;
+    top: 28px;
+    left: 380px;
+    z-index: 20;
+    transition-duration: 1s;
+}
+.logo img{
+    pointer-events: none;
+    draggable: false;
+}
